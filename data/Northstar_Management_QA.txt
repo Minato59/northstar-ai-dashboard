@@ -1,0 +1,170 @@
+NORTHSTAR COMMERCE - MANAGEMENT Q&A
+Reference date: 2026-11-13
+Status: Draft - Human Review Required
+
+======================================================================
+QUESTION 1
+======================================================================
+
+Which projects are currently at high risk, and why?
+
+### VERIFIED FACTS
+
+Based on the workbook data as of November 13, 2026, three projects are categorized as **HIGH RISK**:
+
+1. **PRJ-101: Product Listing Refresh** (Lead: Mia Santos | Target Date: 2026-11-20)
+   * **Why it is at risk:** Upstream dependency delays have blocked downstream work. Task **T-003** ("Approve image sequence", Owner: Jordan Lee) is **Blocked** and delayed (due 2026-11-14, forecast 2026-11-18) awaiting copy direction. The prerequisite task **T-002** ("Draft revised listing copy", Owner: Mia Santos) is due today (2026-11-13) but forecast late to 2026-11-16 because it is awaiting product fact confirmation. This cascades into **T-004** ("Prepare upload checklist", Owner: Mia Santos), which is forecast to complete on 2026-11-19 (due 2026-11-18).
+
+2. **PRJ-102: Monthly Reporting Automation** (Lead: Ethan Cruz | Target Date: 2026-11-17)
+   * **Why it is at risk:** The project has an active **Project Deadline Risk**. Its latest task forecast completion (2026-11-19) exceeds the project target date (2026-11-17). Task **T-005** ("Confirm source report columns", Owner: Ethan Cruz) is **Overdue** (due 2026-11-11, forecast 2026-11-14) due to source export column changes ("Sales" renamed to "Ordered Revenue"). This cascades into dependency delays for **T-006** (due 2026-11-14, forecast 2026-11-18) and **T-007** (due 2026-11-18, forecast 2026-11-19).
+
+3. **PRJ-103: New Product Launch** (Lead: Lara Reyes | Target Date: 2026-11-27 | Priority: Critical)
+   * **Why it is at risk:** The critical path is stalled by task **T-008** ("Approve packaging artwork", Owner: Lara Reyes), which is both **Overdue** and **Blocked** (due 2026-11-12, forecast 2026-11-17) awaiting written approval. This blocker affects all 4 downstream tasks, causing forecast delays across the entire project:
+     * **T-009** (Owner: Lara Reyes): Due 2026-11-14, forecast 2026-11-16; supplier warns the schedule may shift by 3–5 days.
+     * **T-010** (Owner: Mia Santos): Due 2026-11-18, forecast 2026-11-21.
+     * **T-011** (Owner: Noah Lim): Due 2026-11-20, forecast 2026-11-24.
+     * **T-012** (Owner: Ava Garcia): Due 2026-11-23, forecast 2026-11-26.
+
+*(Note: PRJ-104 and PRJ-105 are currently classified as "AT RISK", not "HIGH RISK".)*
+
+---
+
+### RECOMMENDED ACTIONS
+
+* **For PRJ-101:**
+  * Mia Santos should prioritize obtaining product fact confirmations to complete **T-002** draft copy, enabling Jordan Lee to unblock **T-003**.
+* **For PRJ-102:**
+  * Ethan Cruz should resolve **T-005** column mappings to allow workflow updates (**T-006**) and testing (**T-007**) to proceed.
+  * Project leadership should assess whether to fast-track **T-006** and **T-007** or officially re-baseline the project target date beyond 2026-11-17.
+* **For PRJ-103:**
+  * Lara Reyes should expedite obtaining the written approval required to clear the blocker on **T-008**.
+  * Lara Reyes should confirm supplier production shifts on **T-009** to determine if downstream delivery dates (**T-011**, **T-012**) will slip further.
+
+---
+
+### ASSUMPTIONS / UNCERTAINTY
+
+* **Approval Authorities & Information Sources:** The evidence does not specify who is responsible for providing written artwork approval on **T-008** or confirming product facts on **T-002**.
+* **Supplier Impact:** The exact schedule shift from the supplier for **T-009** is reported as a range (3–5 days); it is uncertain whether the current latest task forecast of 2026-11-26 fully absorbs a worst-case 5-day supplier shift.
+
+======================================================================
+QUESTION 2
+======================================================================
+
+Which overdue or blocked tasks require management attention, and who owns them?
+
+### VERIFIED FACTS
+
+As of the reference date (**2026-11-13**), four tasks across four projects are currently overdue, blocked, or both:
+
+1. **Task T-003: Approve image sequence** (Project **PRJ-101: Product Listing Refresh**)
+   - **Owner:** Jordan Lee
+   - **Status / Risk:** Blocked (Due Date: 2026-11-14; Forecast Completion: 2026-11-18).
+   - **Context & Project Risk:** Blocked because it is waiting on copy direction from predecessor task T-002 (owned by Mia Santos, which is awaiting product fact confirmation and forecasted to complete on 2026-11-16). This blockage directly causes a forecast delay for downstream checklist preparation (T-004).
+
+2. **Task T-005: Confirm source report columns** (Project **PRJ-102: Monthly Reporting Automation**)
+   - **Owner:** Ethan Cruz
+   - **Status / Risk:** Overdue (Due Date: 2026-11-11; Forecast Completion: 2026-11-14).
+   - **Context & Project Risk:** Delayed due to an export column name change ("Sales" changed to "Ordered Revenue"). This overdue task delays dependent workflow development (T-006) and testing (T-007), pushing the project's latest task forecast to 2026-11-19, which exceeds the project target date of 2026-11-17.
+
+3. **Task T-008: Approve packaging artwork** (Project **PRJ-103: New Product Launch**)
+   - **Owner:** Lara Reyes
+   - **Status / Risk:** Overdue and Blocked (Due Date: 2026-11-12; Forecast Completion: 2026-11-17; Priority: Critical).
+   - **Context & Project Risk:** Blocked awaiting written approval following a correction. Because T-008 has no predecessors but gates subsequent work, this delay cascades into four downstream tasks (T-009, T-010, T-011, and T-012), jeopardizing production confirmation and launch scheduling.
+
+4. **Task T-013: Inventory existing SOPs** (Project **PRJ-104: Team SOP Cleanup**)
+   - **Owner:** Noah Lim
+   - **Status / Risk:** Overdue (Due Date: 2026-11-12; Forecast Completion: 2026-11-15; Priority: Medium).
+   - **Context & Project Risk:** Task status is "Not Started," with no start update received from the owner. This delay impacts dependent task T-014 ("Prioritize SOP updates") and leaves the entire project stalled at "Not Started."
+
+---
+
+### RECOMMENDED ACTIONS
+
+- **PRJ-101 (T-003):** 
+  - Mia Santos should prioritize unblocking product fact confirmation for T-002 so copy direction can be delivered to Jordan Lee to proceed with image sequence approval.
+- **PRJ-102 (T-005):** 
+  - Ethan Cruz should finalize column mapping adjustments for the "Ordered Revenue" change to allow downstream data-cleaning workflow build (T-006) to resume and mitigate the project deadline overrun.
+- **PRJ-103 (T-008):** 
+  - Lara Reyes should follow up on obtaining the pending written artwork approval immediately, as this critical blocker is delaying production completion dates and listing preparations.
+- **PRJ-104 (T-013):** 
+  - Noah Lim should confirm a start date and initiate the inventory of existing SOPs to establish progress on this stalled project.
+
+---
+
+### ASSUMPTIONS / UNCERTAINTY
+
+- **Approval Authority (T-008):** The evidence states T-008 is "awaiting written approval after one correction," but does not specify the external party or internal stakeholder from whom the written approval is pending.
+- **Supplier Schedule Shifts (PRJ-103):** Task T-009 notes that the supplier indicates the schedule may shift by 3–5 days, but whether this shift is already factored into the 2026-11-16 forecast date is unconfirmed.
+- **Root Cause of SOP Inactivity (PRJ-104):** The records state "No start update received" and "Owner has not confirmed start date," leaving the underlying reason for Noah Lim's delay unverified.
+
+======================================================================
+QUESTION 3
+======================================================================
+
+Which projects have dependency risks, and what actions should management prioritize?
+
+### VERIFIED FACTS
+
+All five projects in the portfolio exhibit dependency risks where downstream tasks are threatened by delayed, blocked, or overdue predecessor tasks:
+
+1. **PRJ-102: Monthly Reporting Automation** (Target Date: 2026-11-17; Latest Forecast: 2026-11-19)
+   - **Why it is at risk:** It has a verified **Project Deadline Risk** (forecast exceeds project target date by 2 days). 
+   - **Dependency Chain:** Upstream task **T-005** (*Confirm source report columns*, Owner: Ethan Cruz, Due: 2026-11-11, Forecast: 2026-11-14) is **Overdue** due to source column name changes ("Sales" changed to "Ordered Revenue"). This directly delays downstream task **T-006** (*Build data-cleaning workflow*, Owner: Ethan Cruz, Due: 2026-11-14, Forecast: 2026-11-18), which in turn delays **T-007** (*Test weekly summary*, Owner: Priya Shah, Due: 2026-11-18, Forecast: 2026-11-19).
+
+2. **PRJ-103: New Product Launch** (Priority: Critical; Target Date: 2026-11-27; Latest Forecast: 2026-11-26)
+   - **Why it is at risk:** A critical path blocker is cascading through four downstream tasks.
+   - **Dependency Chain:** **T-008** (*Approve packaging artwork*, Owner: Lara Reyes, Priority: Critical, Due: 2026-11-12, Forecast: 2026-11-17) is both **Overdue** and **Blocked** awaiting written approval after a correction. 
+   - **Downstream impact:**
+     - **T-009** (*Confirm production completion date*, Lara Reyes, Due: 2026-11-14, Forecast: 2026-11-16) is delayed because T-008's forecast (2026-11-17) exceeds T-009's due date; supplier schedule also notes a potential 3–5 day shift.
+     - **T-010** (*Prepare listing content*, Mia Santos, Due: 2026-11-18, Forecast: 2026-11-21) cannot proceed without approved packaging facts.
+     - **T-011** (*Prepare inbound shipment plan*, Noah Lim, Due: 2026-11-20, Forecast: 2026-11-24) depends on T-009.
+     - **T-012** (*Create launch campaign brief*, Ava Garcia, Due: 2026-11-23, Forecast: 2026-11-26) depends on both T-010 and T-011 (T-011 forecast exceeds T-012 due date).
+
+3. **PRJ-101: Product Listing Refresh** (Target Date: 2026-11-20; Latest Forecast: 2026-11-19)
+   - **Why it is at risk:** Predecessor delay has directly caused a downstream task to be blocked.
+   - **Dependency Chain:** **T-002** (*Draft revised listing copy*, Owner: Mia Santos, Due: 2026-11-13, Forecast: 2026-11-16) is due today and delayed awaiting fact confirmation. Because its forecast exceeds the due date of **T-003** (*Approve image sequence*, Owner: Jordan Lee, Due: 2026-11-14, Forecast: 2026-11-18), T-003 is **Blocked**. This delays **T-004** (*Prepare upload checklist*, Owner: Mia Santos, Due: 2026-11-18, Forecast: 2026-11-19).
+
+4. **PRJ-105: AI Support Inbox Triage** (Target Date: 2026-11-19; Latest Forecast: 2026-11-19)
+   - **Why it is at risk:** A delay on prototype classification compresses timelines for a critical prerequisite task.
+   - **Dependency Chain:** **T-016** (*Build classification prototype*, Owner: Ava Garcia, Due: 2026-11-13, Forecast: 2026-11-17) is experiencing false-positive triage issues and is delayed to 2026-11-17. This pushes **T-017** (*Add human-review queue*, Owner: Ethan Cruz, Priority: Critical, Due: 2026-11-17, Forecast: 2026-11-18) past its due date, which pushes **T-018** (*Test and document errors*, Owner: Priya Shah, Due: 2026-11-18, Forecast: 2026-11-19) to the project target date boundary.
+
+5. **PRJ-104: Team SOP Cleanup** (Target Date: 2026-11-24; Latest Forecast: 2026-11-20)
+   - **Why it is at risk:** Work has not commenced.
+   - **Dependency Chain:** **T-013** (*Inventory existing SOPs*, Owner: Noah Lim, Due: 2026-11-12, Forecast: 2026-11-15) is **Overdue** and Not Started. Consequently, **T-014** (*Prioritize SOP updates*, Owner: Noah Lim, Due: 2026-11-17, Forecast: 2026-11-20) is delayed.
+
+---
+
+### RECOMMENDED ACTIONS
+
+Management should prioritize actions based on project priority, active blockers, and target date breaches:
+
+1. **Top Priority — Resolve Blocked Packaging on Critical Project PRJ-103:**
+   - **Target Task:** T-008 (*Approve packaging artwork*).
+   - **Proposed Action:** Assist Lara Reyes in securing the required written approval immediately to prevent further slippage into T-009, T-010, T-011, and T-012. Reassess the supplier’s noted 3–5 day schedule shift once T-008 is cleared.
+
+2. **Immediate Priority — Recover Schedule on PRJ-102 to Prevent Deadline Breach:**
+   - **Target Tasks:** T-005 and T-006.
+   - **Proposed Action:** Direct Ethan Cruz to finalize the column mapping adjustment ("Ordered Revenue") on T-005 so work on T-006 can proceed without waiting until the 2026-11-18 forecast, protecting the 2026-11-17 project target date.
+
+3. **Unblock Image Sequence on PRJ-101:**
+   - **Target Tasks:** T-002 and T-003.
+   - **Proposed Action:** Support Mia Santos in obtaining product fact confirmation on T-002 to deliver copy direction to Jordan Lee, unblocking T-003.
+
+4. **Address Critical Path Queue on PRJ-105:**
+   - **Target Tasks:** T-016 and T-017.
+   - **Proposed Action:** Ensure Ava Garcia stabilizes classification errors in T-016 so Ethan Cruz can implement the critical human-review queue (T-017) without breaching the 2026-11-19 project deadline.
+
+5. **Establish Start Date for PRJ-104:**
+   - **Target Task:** T-013.
+   - **Proposed Action:** Follow up with Noah Lim to confirm a start date and initiate the inventory on T-013 to stop the overdue schedule slip from further impacting T-014.
+
+---
+
+### ASSUMPTIONS / UNCERTAINTY
+
+- **Packaging Sign-Off Authority (PRJ-103):** The workbook notes T-008 is awaiting written approval after one correction, but does not identify the external or internal entity responsible for granting this approval.
+- **Supplier Schedule Impact (PRJ-103):** The latest update on T-009 states the supplier schedule may shift by 3–5 days; it is uncertain whether the current 2026-11-16 forecast completion already incorporates this 3–5 day shift or if additional delay will occur.
+- **Source of Fact Confirmation (PRJ-101):** The update for T-002 states it is awaiting "product fact confirmation," but the specific stakeholder or department required to confirm these facts is not identified.
+- **Root Cause of Inactivity (PRJ-104):** Noah Lim has not provided a start update for T-013; reasons for the lack of start remain unspecified in the record.
+
