@@ -19,6 +19,30 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Improve dashboard KPI number visibility
+st.markdown("""
+<style>
+/* Overview metric numbers */
+[data-testid="stMetricValue"] {
+    color: #172554 !important;
+    font-weight: 800 !important;
+    font-size: 2.2rem !important;
+}
+
+/* Metric labels, including Requests Processed */
+[data-testid="stMetricLabel"] {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+/* Metric supporting text */
+[data-testid="stMetricDelta"] {
+    font-weight: 600 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 DATA_PATH = (
     Path(__file__).resolve().parent
     / "data"
